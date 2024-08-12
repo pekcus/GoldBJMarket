@@ -1,12 +1,14 @@
 	/* ***** STYLE SHEET FOR GOLDBJMARKET.COM ***** */
 	
 	:root {
-		--white: #ffffff;
-		--whitet: #ffffffc0;
-		--c1: #1a237e;
-		--c2: #1a237e;
-		--c3: #1a237e;
-		--c4: #c5cae9;
+		--bg: #23343c; /* dark turquoise for bg */
+		--bgt: #23343cf0;
+		--bgm: #135957; /* medium turquoise for bg */
+		--c1: #ffffff; /* white */
+		--c2: #28bfba; /* bright turquoise for borders and links */
+		--c3: #182329; /* darkest turquoise for borders */
+		--c4: #fee70d; /* yellow TODO */
+		--c5: #f56421; /* orange */
 		/**
 		--c5: ;
 		**/
@@ -15,12 +17,15 @@
 	html {
 		text-align: justify;
 		text-justify: inter-word;
+		
 	}
 	
 	/* ***** STYLE FOR BODY ***** */
 	body {
-		background-image: url('images/pixels/bunnies_pink.png');
+		background-image: url('images/bg.png');
 		background-position: center;
+		background-color: var(--bgm);
+		background-size: 20%;
 		margin: 40px auto;
 		max-width: 750px;
 		line-height: 1.6;
@@ -32,9 +37,9 @@
 	
 	/* ***** STYLE FOR MAIN CONTENT ***** */
 	main {
-		background: var(--whitet);
+		background: var(--bg);
 		border: 2px solid;
-		border-color: var(--white);
+		border-color: var(--c3);
 	}
 	
 	a {
@@ -55,7 +60,7 @@
 	}
 	th {
 		color: var(--c1);
-		background-color: #ffcfe0;
+		background-color: var(--bgm);
 	}
 	
 	header {
@@ -68,7 +73,6 @@
 	h2 {
 		/**margin: 10px 10px 10px 10px;**/
 		font-size: 40px;
-		background-image: url('images/pixels/dots_h2.png');
 		background-position: center;
 		background-size: 11%;
 		padding: 10px 0px 10px 0px;
@@ -94,12 +98,12 @@
 	.btn, .btn-primary {
 		margin: 5px auto 5px auto;
 		font-size: 24px;
-		color: var(--white) !important;
+		color: var(--bg) !important;
 		background-color: var(--c3);
 		border-color: var(--c3);
 	}
 	.btn:hover, .btn-primary:hover {
-		color: var(--white) !important;
+		color: var(--bg) !important;
 		background-color: var(--c1);
 		border-color: var(--c1);
 	}
@@ -126,7 +130,7 @@
 	}
 	/** Borders for Images **/
 	.image img {
-		width: 100%;
+		width: 90%;
 		margin: 10px auto 10px auto;
 		padding: 0px;
 		border: 2px solid;
@@ -192,17 +196,10 @@
 		transition: all 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
 	}
 	.navbar.fixed-top {
-		background-image: url('images/pixels/dots_h2.png');
-		background-position: center;
-		background-size: 5.1%;
-		border-bottom: 30px;
-		border-image: url('images/pixels/nav.gif') 0 0 40 0 / / 0px 0px 30px 0px repeat;
-		border-image-width: 0px 0px 30px 0px;
-		/**
+		background-color:	var(--bgt);
 		border-bottom: 2px solid;
-		border-color: var(--c1);
-		box-shadow: 0 6px 15px #ffcfe0;
-		**/
+		border-color: var(--c3);
+		/*box-shadow: 0 6px 10px var(--c2);*/
 	}
 	.section {
 		margin: 0px;
@@ -228,10 +225,10 @@
 	/** ***** DIVIDERS ***** **/
 	.tiny-line {
 		/**border-top: 1px solid var(--c1);**/
-		background-image: url('images/pixels/div1.png');
+		background-image: url('images/borderl.png');
 		background-repeat: no-repeat;
-		background-size: 42%;
-		height: 30px;
+		background-size: 80%;
+		height: 50px;
 		margin: 10px 0px 10px 0px;
 	}
 	.small-line {
@@ -244,18 +241,18 @@
 	}
 	.top-line {
 		/**border-top: 2px solid var(--c1);**/
-		background-image: url('images/pixels/divt2.gif');
-		background-repeat: repeat-x;
-		background-size: 11.1%;
-		height: 52px;
+		background-image: url('images/bordert.png');
+		background-repeat: no-repeat;
+		background-size: 80%;
+		height: 130px;
 		margin-top: 20px;
 	}
 	.bottom-line {
 		/**border-top: 2px solid var(--c1);**/
-		background-image: url('images/pixels/divb2.gif');
-		background-repeat: repeat-x;
-		background-size: 11.1%;
-		height: 52px;
+		background-image: url('images/borderb.png');
+		background-repeat: no-repeat;
+		background-size: 80%;
+		height: 130px;
 		margin-bottom: 20px;
 	}
 	.tiny-line, .small-line, .large-line, .top-line, .bottom-line {
