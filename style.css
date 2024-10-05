@@ -108,7 +108,7 @@
 		border-color: var(--c1);
 	}
 	.standalone-logo {
-		color: var(--c3);
+		color: var(--c4);
 	}
 	.standalone-logo:hover, .nav-link:hover {
 		color: var(--c1);
