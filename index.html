@@ -19,18 +19,18 @@
 	<!-- Navigation Links (topbar) -->
 	<nav class="navbar navbar-expand-md fixed-top" style="margin: 0px !important; padding: 0px !important;">
 		<div class="container" style="flex-direction: row; white-space: nowrap;">
-			<a class="navbar-brand" href="#">ICON</a>
+			<!-- <a class="navbar-brand" href="#">ICON</a> -->
 			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
 				<span class="navbar-toggler-icon"></span>
 			</button>
 			<div class="collapse navbar-collapse" id="navbarNav" style="margin: 0px; padding: 0px;">
 				<ul class="navbar-nav">
-					<li><a class="nav-link" href="#link1"><div class="l">Link1</div></a></li>
-					<li><a class="nav-link" href="#link2"><div class="l">Link2</div></a></li>
-					<li><a class="nav-link" href="#link3"><div class="l">Link3</div></a></li>
-					<li><a class="nav-link" href="#link4"><div class="l">Link4</div></a></li>
-					<li><a class="nav-link" href="#link5"><div class="l">Link5</div></a></li>
-					<li><a class="nav-link" href="#link6"><div class="l">Link6</div></a></li>
+					<li><a class="nav-link" href="#home"><div class="l">Home</div></a></li>
+					<li><a class="nav-link" href="#hours"><div class="l">Hours</div></a></li>
+					<li><a class="nav-link" href="#products"><div class="l">Products</div></a></li>
+					<li><a class="nav-link" href="#staff"><div class="l">Staff</div></a></li>
+					<li><a class="nav-link" href="#socials"><div class="l">Socials</div></a></li>
+					<li><a class="nav-link" href="#contact"><div class="l">Contact</div></a></li>
 				</ul>
 			</div>
 		</div>
@@ -45,23 +45,22 @@
 	<!-- Header -->
 	<header id="home" style="padding-top:40px;">
 		<section id="section">
-			<img src="images/Veronica Reingold.jpg" alt="Market Logo" style="border-radius: 50%; max-width: 400px;">
+			<div class="top-line"></div>
 			<h1 style="margin: 0;">BAZAR</h1>
-			<h4 style="background-image: none;">Ukranian & International Food</h4>
-			<h2 style="background-image: none;">! Website Under Construction !</h2>
+			<h4>Ukranian & International Food</h4>
+			<div class="image"><img src="images/staff/s-3.jpg" alt="Bazar Staff"></div>
+			<div class="bottom-line"></div>
 		</section>
 	</header>
 	
-	<!-- Under Construction -->
+	<!-- Hours -->
 	<section id="hours" class="section">
-		<div class="top-line"></div>
 		<h2>Hours</h2>
 		<h4>1030 Walker Rd</h4>
 		<h5>The enterance is on the left side of the building.</h5>
-		<div class="bottom-line"></div>
+		<div class="tiny-line"></div>
 	</section>
 	<section class="section" style="display:flex; justify-content: center;">
-		
 		<table style="width: 80%">
 			<tr>
 				<th style="width: 50%">Day</th>
@@ -98,19 +97,90 @@
 		</table>
 	</section>	
 	
+	<!-- Products -->
+	<section id="products" class="section" style="text-align: center">
+		<div class="tiny-line"></div>
+		<h2>Products</h2>
+		<p>We offer a delightful array of traditional snacks, treats, and fresh dishes made with love by our talented Ukranian chef are sure to please everyone! We also have unique souvenirs!</p>
+		<div class="tiny-line"></div>
+		<div class="image">
+			<div class="centered-items">
+				<div class="image"><img id="Focused1" alt="Focused" style="display: none; max-height: 500px; width: 90%;"></div>
+			</div>
+			<div class="centered-items">
+				<img src="images/product/eggplants.jpeg" style="width:120px;" class="skills-logos img-fluid" onclick="focusImage(this, 'Focused1');">
+				<img src="images/product/meats.jpeg" style="width:120px;" class="skills-logos img-fluid" onclick="focusImage(this, 'Focused1');">
+				<img src="images/product/crepes.jpg" style="width:120px;" class="skills-logos img-fluid" onclick="focusImage(this, 'Focused1');">
+			</div>
+			<div class="centered-items">
+				<img src="images/product/subs.jpeg" style="width:120px;" class="skills-logos img-fluid" onclick="focusImage(this, 'Focused1');">
+				<img src="images/product/buns.jpeg" style="width:120px;" class="skills-logos img-fluid" onclick="focusImage(this, 'Focused1');">
+				<img src="images/product/cabbages.jpeg" style="width:120px;" class="skills-logos img-fluid" onclick="focusImage(this, 'Focused1');">
+			</div>
+			<div class="centered-items">
+				<img src="images/product/sauces.jpeg" style="width:120px;" class="skills-logos img-fluid" onclick="focusImage(this, 'Focused1');">
+				<img src="images/product/spices.jpeg" style="width:120px;" class="skills-logos img-fluid" onclick="focusImage(this, 'Focused1');">
+				<img src="images/product/cans.jpeg" style="width:120px;" class="skills-logos img-fluid" onclick="focusImage(this, 'Focused1');">
+			</div>
+			<div class="centered-items">
+				<img src="images/product/teas.jpeg" style="width:120px;" class="skills-logos img-fluid" onclick="focusImage(this, 'Focused1');">
+				<img src="images/product/sweets.jpeg" style="width:120px;" class="skills-logos img-fluid" onclick="focusImage(this, 'Focused1');">
+				<img src="images/product/dolls.jpeg" style="width:120px;" class="skills-logos img-fluid" onclick="focusImage(this, 'Focused1');">
+			</div>
+		</div>
+	</section>
+	
+	<!-- Staff -->
+	<section id="staff" class="section">
+		<div class="tiny-line"></div>
+		<h2>Staff</h2>
+		<h5>Come by and say hello, we look forward to seeing you!</h5>
+		<div class="tiny-line"></div>
+		<div class="image">
+			<div class="centered-items">
+				<div class="image"><img id="Focused2" alt="Focused" style="display: none; max-height: 500px; width: 90%;"></div>
+			</div>
+			<div class="centered-items">
+				<img src="images/staff/crepes.jpeg" style="width:120px;" class="skills-logos img-fluid" onclick="focusImage(this, 'Focused2');">
+				<img src="images/staff/s-1.jpeg" style="width:120px;" class="skills-logos img-fluid" onclick="focusImage(this, 'Focused2');">
+				<img src="images/staff/s-2.jpeg" style="width:120px;" class="skills-logos img-fluid" onclick="focusImage(this, 'Focused2');">
+			</div>
+			<div class="centered-items">
+				<img src="images/staff/boris.jpeg" style="width:120px;" class="skills-logos img-fluid" onclick="focusImage(this, 'Focused2');">
+				<img src="images/staff/boris-fish.jpeg" style="width:120px;" class="skills-logos img-fluid" onclick="focusImage(this, 'Focused2');">
+				<img src="images/staff/pierogies.jpeg" style="width:120px;" class="skills-logos img-fluid" onclick="focusImage(this, 'Focused2');">
+			</div>
+		</div>
+	</section>
+	
+	<!-- Socials -->
+	<section id="socials" class="section">
+		<div class="tiny-line"></div>
+		<h2>Socials</h2>
+		<h5>Follow us!</h5>
+	</section>
+	<section class="section">
+		<div class="centered-items" style="font-size: 64px;">
+				<a href="https://www.instagram.com/bazar_in_windsor/" title="Instagram" target="_blank"><i class="bi bi-instagram standalone-logo" alt="Instagram"></i></a>
+			</div>
+	</section>
+	
+	<!-- Contact -->
 	<section id="contact" class="section">
+		<div class="tiny-line"></div>
 		<h2>Contact</h2>
 	</section>
 	<section class="section">
-			<div style="font-size: 64px; text-align: center">
-				<a href="mailto:sales@goldbjmarket.com" title="Sales@GoldBJMarket.com"><i class="bi bi-envelope standalone-logo" alt="Sales@GoldBJMarket.com"></i></a>
-				<h4>sales@goldbjmarket.com</h4>
-				<a href="mailto:boris@goldbjmarket.com" title="Boris@GoldBJMarket.com"><i class="bi bi-envelope standalone-logo" alt="Boris@GoldBJMarket.com"></i></a>
-				<h4>boris@goldbjmarket.com</h4>
-				<a href="mailto:jenna@goldbjmarket.com" title="Jenna@GoldBJMarket.com"><i class="bi bi-envelope standalone-logo" alt="Jenna@GoldBJMarket.com"></i></a>
-				<h4>jenna@goldbjmarket.com</h4>
-			</div>
-		</section>
+		<div style="font-size: 64px; text-align: center">
+			<a href="mailto:sales@goldbjmarket.com" title="Sales@GoldBJMarket.com"><i class="bi bi-envelope standalone-logo" alt="Sales@GoldBJMarket.com"></i></a>
+			<h5>sales@goldbjmarket.com</h5>
+			<a href="mailto:boris@goldbjmarket.com" title="Boris@GoldBJMarket.com"><i class="bi bi-envelope standalone-logo" alt="Boris@GoldBJMarket.com"></i></a>
+			<h5>boris@goldbjmarket.com</h5>
+			<a href="mailto:jenna@goldbjmarket.com" title="Jenna@GoldBJMarket.com"><i class="bi bi-envelope standalone-logo" alt="Jenna@GoldBJMarket.com"></i></a>
+			<h5>jenna@goldbjmarket.com</h5>
+			</br>
+		</div>
+	</section>
 </main>
 
 	<!-- Scripts -->
@@ -141,8 +211,8 @@
 			observer.observe(section);
 		});
 		<!-- Image Gallery Popup -->
-		function focusImage(img) {
-			let focusImage = document.getElementById('Focused');
+		function focusImage(img, id) {
+			let focusImage = document.getElementById(id);
 			focusImage.src = img.src;
 			focusImage.style.display = "block";
 			focusImage.scrollIntoView();
